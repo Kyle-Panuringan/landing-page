@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: black;
+}
+
+header {
+  background: darkred;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

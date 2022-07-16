@@ -1,0 +1,21 @@
+@import "./reset";
+@import "./variables";
+
+body {
+	color: $text;
+	background: $primary;
+}
+
+header {
+	background: $secondary;
+}
+
+nav {
+	ul {
+		list-style-type: none;
+	}
+	a {
+		color: $text;
+		text-decoration: none;
+	}
+}
