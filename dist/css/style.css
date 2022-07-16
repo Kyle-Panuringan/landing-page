@@ -82,6 +82,12 @@ nav a::after {
 nav a:hover::after {
   width: 70%;
 }
+@media (max-width: 777px) {
+  nav {
+    display: none;
+  }
+}
+
 #hamburger {
   display: none;
   color: white;
@@ -132,7 +138,7 @@ nav a:hover::after {
 }
 
 .cards {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/cards.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/cards.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,10 +159,6 @@ nav a:hover::after {
   min-height: 50vh;
   text-shadow: 0px 4px 7px black;
   padding: 7px;
-}
-.cards li span {
-  color: #ebc700;
-  font-size: 4rem;
 }
 .cards li h3 {
   color: #ebc700;

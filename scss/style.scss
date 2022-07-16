@@ -83,7 +83,7 @@ nav {
 		}
 	}
 	@include mobile {
-		// display: none;
+		display: none;
 	}
 }
 #hamburger {
@@ -133,12 +133,11 @@ nav {
 	}
 }
 .cards {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("../assets/cards.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	// filter: blur(8px);
 	ul {
 		list-style-type: none;
 		display: flex;
@@ -155,10 +154,6 @@ nav {
 		min-height: 50vh;
 		text-shadow: 0px 4px 7px black;
 		padding: 7px;
-		span {
-			color: $yellow;
-			font-size: 4rem;
-		}
 		h3 {
 			color: $yellow;
 			font-size: 2rem;
