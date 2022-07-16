@@ -57,12 +57,24 @@ nav ul {
 nav li {
   position: relative;
 }
+@media (max-width: 777px) {
+  nav li {
+    width: 100vw;
+  }
+}
 nav a {
   color: white;
   text-transform: uppercase;
   padding: 0 27px;
   text-decoration: none;
   transition: color 0.3s;
+}
+@media (max-width: 777px) {
+  nav a {
+    text-align: center;
+    padding: 7px;
+    display: block;
+  }
 }
 nav a:hover {
   color: #ceaf00;
@@ -152,6 +164,11 @@ nav a:hover::after {
   gap: 57px;
   text-align: center;
 }
+@media (max-width: 777px) {
+  .cards ul {
+    flex-direction: column;
+  }
+}
 .cards li {
   color: white;
   border: 3px solid #ceaf00;
@@ -173,27 +190,61 @@ nav a:hover::after {
 }
 
 .our-story {
+  margin-top: 10px;
+}
+.our-story-head {
+  font-size: 2rem;
+  text-align: center;
+  padding: 7px;
+}
+.our-story-content {
   display: flex;
   justify-content: center;
   gap: 70px;
-  padding: 10px 0;
+  padding: 0px 27px;
 }
-.our-story-left {
+@media (max-width: 777px) {
+  .our-story-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+.our-story-right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 50%;
 }
-.our-story-left h3 {
-  font-size: 4rem;
-  margin: 17px 0;
+@media (max-width: 777px) {
+  .our-story-right {
+    width: 90vw;
+    padding: 10px 0;
+  }
 }
-.our-story-left p {
+.our-story-right h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 17px 0;
+  padding: 10px 0;
+}
+@media (max-width: 777px) {
+  .our-story-right h3 {
+    margin: 0;
+  }
+}
+.our-story-right p {
   font-style: italic;
   text-indent: 50px;
+  word-spacing: 2px;
   text-align: justify;
   font-size: 1.7rem;
+}
+@media (max-width: 777px) {
+  .our-story-right p {
+    font-size: 1.5rem;
+  }
 }
 
 hr {
@@ -204,4 +255,8 @@ hr {
 footer {
   text-align: center;
   padding: 10px;
+}
+
+.show-links {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
